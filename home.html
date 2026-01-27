@@ -9,7 +9,7 @@
 
     <title>VIABLOG</title>
   </head>
-  <body class="bg-white text-black font-semibold flex flex-col justify-between gap-5">
+  <body class="bg-amber-50 text-black font-semibold flex flex-col justify-between gap-6">
     <header class="m-5">
       <nav class="flex justify-between">
         <div class="flex flex-col gap-4 hover:cursor-pointer">
@@ -94,26 +94,48 @@
         >
       </div>
     </section>
-    <section class="">
-      <img src="images/smile.jpg" alt="" class="rounded-3xl px-2">
-      <div class="flex justify-around pt-5 rounded-3xl px-4 shadow-md  ">
-        <div><h2 class="font-bold">Yellow River</h2>
-        <h3 class="font-semibold">by lan jacobs</h3>
-      </div><!--title-->
-        <div class="flex gap-4">
-          <span class="text-gray-500 flex gap-2"><img src="images/endroit.png" alt="" class="w-6 h-6 hover:cursor-pointer"> china</span>
-          <span class="text-gray-500 flex gap-2"><img src="images/time-and-date.png" alt="" class="w-6 h-6 hover:cursor-pointer">15 min</span>
-          <span class="text-gray-500 flex gap-2"><img src="images/oeil.png" alt="" class="w-6 h-6 hover:cursor-pointer">124</span></div><!--icon info-->
+  <section class="">
+  <!-- image + icon -->
+  <div class="flex items-start">
+    <img
+      src="images/smile.jpg"
+      alt=""
+      class="rounded-3xl px-2 z-0"
+    >
 
-      </div><!--div main description-->
-    </section>
-    <section>
-      <div>oiejz</div>
-      <div>dhcij</div>
-    </section>
-    <footer>
-      <img>
-      <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+    <img
+      src="images/insigne-damour.png"
+      alt=""
+      class="w-10 h-10 -ml-12 mt-4 z-10"
+    >
+  </div>
+
+  <!-- description -->
+  <div class="flex justify-around pt-5 rounded-3xl px-4 shadow-md">
+    <div>
+      <h2 class="font-bold">Yellow River</h2>
+      <h3 class="font-semibold">by Ian Jacobs</h3>
+    </div>
+
+    <div class="flex gap-4">
+      <span class="text-gray-500 flex gap-2 items-center">
+        <img src="images/endroit.png" class="w-6 h-6"> china
+      </span>
+      <span class="text-gray-500 flex gap-2 items-center">
+        <img src="images/time-and-date.png" class="w-6 h-6"> 15 min
+      </span>
+      <span class="text-gray-500 flex gap-2 items-center">
+        <img src="images/oeil.png" class="w-6 h-6"> 124
+      </span>
+    </div>
+  </div>
+</section>
+
+    <footer class="flex justify-center gap-12 items-center shadow-md rounded-3xl bg-red-600 h-16">
+      <span class="bg-pink-300 rounded-lg w-20 h-6"><img src="images/maison.png" alt="" class="h-6 w-6  hover:bg-[#20B08D] hover:rounded-lg"></span>
+      <span><img src="images/endroit.png" alt="" class="h-6 w-6 hover:rounded-3xl hover:bg-[#20B08D]"></span>
+      <span><img src="images/insigne-damour.png" alt="" class="h-6 w-6 hover:rounded-3xl hover:bg-[#20B08D]"></span>
+    <span>  <img src="images/utilisateur.png" alt=""class="h-6 w-6 hover:rounded-3xl hover:bg-[#20B08D]"></span>
     </footer>
   </body>
 </html>
