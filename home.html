@@ -6,70 +6,114 @@
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="icon" href="images/plane_8885364.png" type="image/png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <title>VIABLOG</title>
   </head>
-  <body class="bg-white text-black font-semibold">
+  <body class="bg-white text-black font-semibold flex flex-col justify-between gap-5">
     <header class="m-5">
       <nav class="flex justify-between">
         <div class="flex flex-col gap-4 hover:cursor-pointer">
-          <span class="block h-1 w-14 bg-black"></span>
-          <span class="block h-1 w-14 bg-black"></span>
-          <span class="block h-1 w-14 bg-black"></span>
+          <span class="block h-1 w-10 bg-black"></span>
+          <span class="block h-1 w-10 bg-black"></span>
+          <span class="block h-1 w-10 bg-black"></span>
         </div>
-        <img
-          src="images/magnifiying-glass_93642.png"
-          alt=""
-          class="w-14 h-10 hover:cursor-pointer"
-        />
+        <img src="images/magnifiying-glass_93642.png" alt="" class="w-10 h-10 hover:cursor-pointer"/>
       </nav>
     </header>
-   <section class="py-6 m-0 pt-10">
-  <div class="max-w-5xl mx-auto ml-4  flex flex-col gap-10"><!--div main-->
-    <h2 class="text-2xl font-bold ">Blogger of the week</h2>
+    <section class="">
+      <div class="max-w-5xl mx-auto ml-4 flex flex-col gap-10">
+        <!--div main-->
+        <h2 class="text-2xl font-bold">Blogger of the week</h2>
 
-    <div class="flex flex-col gap-2 "><!-- Profils + images -->
-      <div class="flex gap-4 overflow-x-auto pb-2 ">
-        <!-- Story / Profile 1 -->
-        <div class="flex flex-col items-center min-w-[64px]">
-          <div class="w-16 h-16 bg-[url('images/woman.jpg')] bg-cover bg-center rounded-full"></div>
-          <span class="mt-2 text-sm text-center">Josifina</span>
-        </div>
+        <div class="flex flex-col gap-2">
+          <!-- Profils + images -->
+          <div class="flex gap-4 overflow-x-auto pb-2">
+            <!-- Story / Profile 1 -->
+            <div class="flex flex-col items-center min-w-[64px]">
+              <div
+                class="w-16 h-16 bg-[url('images/woman.jpg')] bg-cover bg-center rounded-full"
+              ></div>
+              <span class="mt-2 text-sm text-center">Josifina</span>
+            </div>
 
-        <!-- Story / Profile 2 -->
-        <div class="flex flex-col items-center min-w-[64px]">
-          <div class="w-16 h-16 bg-[url('images/man.jpg')] bg-cover bg-center rounded-full"></div>
-          <span class="mt-2 text-sm text-center">Jhon</span>
-        </div>
+            <!-- Story / Profile 2 -->
+            <div class="flex flex-col items-center min-w-[64px]">
+              <div
+                class="w-16 h-16 bg-[url('images/man.jpg')] bg-cover bg-center rounded-full"
+              ></div>
+              <span class="mt-2 text-sm text-center">Jhon</span>
+            </div>
 
-        <!-- Story / Profile 3 -->
-        <div class="flex flex-col items-center min-w-[64px]">
-          <div class="w-16 h-16 bg-[url('images/girl.jpg')] bg-cover bg-center rounded-full"></div>
-          <span class="mt-2 text-sm text-center">Rose</span>
-        </div>
+            <!-- Story / Profile 3 -->
+            <div class="flex flex-col items-center min-w-[64px]">
+              <div
+                class="w-16 h-16 bg-[url('images/girl.jpg')] bg-cover bg-center rounded-full"
+              ></div>
+              <span class="mt-2 text-sm text-center">Rose</span>
+            </div>
 
-        <!-- Story / Profile 4 -->
-        <div class="flex flex-col items-center min-w-[64px]">
-          <div class="w-16 h-16 bg-[url('images/man1.jpg')] bg-cover bg-center rounded-full"></div>
-          <span class="mt-2 text-sm text-center">Micha</span>
-        </div>
-         <div class="flex flex-col items-center min-w-[64px]">
-          <div class="w-16 h-16 bg-[url('images/girl.jpg')] bg-cover bg-center rounded-full"></div>
-          <span class="mt-2 text-sm text-center">Rose</span>
+            <!-- Story / Profile 4 -->
+            <div class="flex flex-col items-center min-w-[64px]">
+              <div
+                class="w-16 h-16 bg-[url('images/man1.jpg')] bg-cover bg-center rounded-full"
+              ></div>
+              <span class="mt-2 text-sm text-center">Micha</span>
+            </div>
+            <div class="flex flex-col items-center min-w-[64px]">
+              <div
+                class="w-16 h-16 bg-[url('images/girl.jpg')] bg-cover bg-center rounded-full"
+              ></div>
+              <span class="mt-2 text-sm text-center">Rose</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<section class="ml-4 flex gap-4 flex-col">
-<h2>What do you want to Read ?</h2>
-<div class="flex gap-2 justify-start">
-<buttun class="  text-black px-3 py-1.5 rounded-full  border border-black hover:bg-[#20B08D] hover:text-white">All</buttun>
-<buttun class=" text-black px-3 py-1.5 rounded-full  border border-black hover:bg-[#20B08D] hover:text-white">Forest</buttun>
-<buttun class=" text-black px-3 py-1.5 rounded-full  border border-black hover:bg-[#20B08D] hover:text-white">Beach</buttun>
-<buttun class=" text-black px-3 py-1.5 rounded-full  border border-black hover:bg-[#20B08D] hover:text-white">River</buttun>
-<buttun class=" text-black px-3 py-1.5 rounded-full  border border-black hover:bg-[#20B08D] hover:text-white">Mountain</buttun>
-</div>
-</section>
+    </section>
+    <section class="ml-4 flex gap-4 flex-col">
+      <h2>What do you want to Read ?</h2>
+      <div class="flex gap-2 justify-start">
+        <buttun
+          class="text-black px-3 py-1.5 rounded-full border border-black hover:bg-[#20B08D] hover:text-white" 
+          >All</buttun
+        >
+        <buttun
+          class="text-black px-3 py-1.5 rounded-full border border-black hover:bg-[#20B08D] hover:text-white"
+          >Forest</buttun
+        >
+        <buttun
+          class="text-black px-3 py-1.5 rounded-full border border-black hover:bg-[#20B08D] hover:text-white"
+          >Beach</buttun
+        >
+        <buttun
+          class="text-black px-3 py-1.5 rounded-full border border-black hover:bg-[#20B08D] hover:text-white"
+          >River</buttun
+        >
+        <buttun
+          class="text-black px-3 py-1.5 rounded-full border border-black hover:bg-[#20B08D] hover:text-white"
+          >Mountain</buttun
+        >
+      </div>
+    </section>
+    <section class="">
+      <img src="images/smile.jpg" alt="" class="rounded-3xl px-2">
+      <div class="flex justify-around pt-5 rounded-3xl px-4 shadow-md  ">
+        <div><h2 class="font-bold">Yellow River</h2>
+        <h3 class="font-semibold">by lan jacobs</h3>
+      </div><!--title-->
+        <div class="flex gap-4">
+          <span class="text-gray-500 flex gap-2"><img src="images/endroit.png" alt="" class="w-6 h-6 hover:cursor-pointer"> china</span>
+          <span class="text-gray-500 flex gap-2"><img src="images/time-and-date.png" alt="" class="w-6 h-6 hover:cursor-pointer">15 min</span>
+          <span class="text-gray-500 flex gap-2"><img src="images/oeil.png" alt="" class="w-6 h-6 hover:cursor-pointer">124</span></div><!--icon info-->
+
+      </div><!--div main description-->
+    </section>
+    <section>
+      <div>oiejz</div>
+      <div>dhcij</div>
+    </section>
+    <footer>
+      <img>
+      <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+    </footer>
   </body>
 </html>
