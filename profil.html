@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="icon" href="images/plane_8885364.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>VIABLOG</title>
+</head>
+<body>
+   <section class="max-w-5xl mx-auto p-6 space-y-12">
+
+  <!-- Profile Info -->
+  <div class="flex items-center gap-6 mb-8">
+    <img src="images/girl.jpg" alt="Avatar" class="w-24 h-24 rounded-full border-2 border-blue-500">
+    <div>
+      <h1 class="text-3xl font-bold text-gray-800">Rose</h1>
+      <button class="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Edit Profile</button>
+    </div>
+  </div>
+
+  <!-- Historique de lecture -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6 text-gray-700">Historique de lecture</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+        <img src="images/smile.jpg" alt="Article 1" class="w-full h-40 object-cover rounded-lg mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Article 1</h3>
+        <p class="text-gray-500 text-sm mt-1">Publié le 12 Janvier 2026</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Articles favoris -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6 text-gray-700">Articles favoris</h2>
+      <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1">
+        <img src="images/smile.jpg" alt="Favori 1" class="w-full h-40 object-cover rounded-lg mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Favori 1</h3>
+        <p class="text-gray-500 text-sm mt-1">Publié le 5 Janvier 2026</p>
+      </div>
+  </div>
+
+</section>
+
+</body>
+</html>
