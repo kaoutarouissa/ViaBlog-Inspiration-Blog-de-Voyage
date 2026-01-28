@@ -18,9 +18,10 @@
           <span class="block h-1 w-10 bg-black"></span>
         </div>
         <ul class="hidden lg:flex gap-8">
-  <li class="hover:text-[#20B08D] cursor-pointer">Blog</li>
-  <li class="hover:text-[#20B08D] cursor-pointer">About</li>
-  <li class="hover:text-[#20B08D] cursor-pointer">Contact</li>
+  <li class="hover:text-[#20B08D] cursor-pointer"><a href="home.html">Home</a></li>
+  <li class="hover:text-[#20B08D] cursor-pointer">Location</li>
+  <li class="hover:text-[#20B08D] cursor-pointer">Wishlist</li>
+<li class="hover:text-[#20B08D] cursor-pointer"><a href="profil.html">Profil</a></li>
 </ul>
         <img src="images/magnifiying-glass_93642.png" alt="" class="w-10 h-10 hover:cursor-pointer"/>
       </nav>
@@ -150,45 +151,108 @@
         >
       </div>
     </section>
-  <section class="">
-  <!-- image + icon -->
-  <div class="flex items-start hover:cursor-pointer"><a href="description.html">
-    <img
-      src="images/smile.jpg"
-      alt=""
-      class="rounded-3xl px-2 z-0"
-    >
-</a>
-    <img
-      src="images/insigne-damour.png"
-      alt=""
-      class="w-10 h-10 -ml-12 mt-4 z-10"
-    >
-    
-  </div>
+ <section class="grid grid-cols-1 gap-6 
+               lg:grid-cols-2 xl:grid-cols-3 
+               lg:max-w-7xl lg:mx-auto px-4">
 
-  <!-- description -->
-  <div class="flex justify-around pt-5 rounded-3xl px-4 shadow-md">
-    <div>
-      <h2 class="font-bold">Yellow River</h2>
-      <h3 class="font-semibold">by Ian Jacobs</h3>
+  <!-- CARD 1 -->
+  <div class="hover:cursor-pointer bg-white rounded-3xl shadow-md overflow-hidden 
+              flex flex-col lg:flex-row">
+
+    <div class="relative">
+     <a href="description.html"> <img src="images/smile.jpg"
+           class="w-full h-56 object-cover lg:w-64 lg:h-full">
+      <img src="images/insigne-damour.png"
+           class="absolute top-4 right-4 w-10 h-10"></a>
     </div>
 
-    <div class="flex gap-4">
-      <span class="text-gray-500 flex gap-2 items-center">
-        <img src="images/endroit.png" class="w-6 h-6"> china
-      </span>
-      <span class="text-gray-500 flex gap-2 items-center">
-        <img src="images/time-and-date.png" class="w-6 h-6"> 15 min
-      </span>
-      <span class="text-gray-500 flex gap-2 items-center">
-        <img src="images/oeil.png" class="w-6 h-6"> 124
-      </span>
+    <div class="p-4 flex flex-col justify-between gap-4">
+      <div>
+        <h2 class="font-bold text-lg">Yellow River</h2>
+        <h3 class="text-sm text-gray-600">by Ian Jacobs</h3>
+      </div>
+
+      <div class="flex gap-6 text-gray-500 text-sm">
+        <span class="flex">
+          <img src="images/endroit.png" class="w-4 h-4"> China
+        </span>
+        <span class="flex items-center gap-2">
+          <img src="images/time-and-date.png" class="w-4 h-4"> 5m
+        </span>
+        <span class="flex items-center gap-2">
+          <img src="images/oeil.png" class="w-5 h-5"> 124
+        </span>
+      </div>
     </div>
   </div>
+
+  <!-- CARD 2 -->
+  <div class="bg-white rounded-3xl shadow-md overflow-hidden 
+              flex flex-col lg:flex-row">
+
+    <div class="relative">
+      <a href="description.html">
+      <img src="images/smile.jpg"
+           class="w-full h-56 object-cover lg:w-64 lg:h-full">
+      <img src="images/insigne-damour.png"
+           class="absolute top-4 right-4 w-10 h-10">
+    </div></a>
+
+    <div class="p-4 flex flex-col justify-between gap-4">
+      <div>
+        <h2 class="font-bold text-lg">Blue Lake</h2>
+        <h3 class="text-sm text-gray-600">by Anna Smith</h3>
+      </div>
+
+      <div class="flex gap-4 text-gray-500 text-sm">
+        <span class="flex items-center gap-1">
+          <img src="images/endroit.png" class="w-5 h-5"> Canada
+        </span>
+        <span class="flex items-center gap-1">
+          <img src="images/time-and-date.png" class="w-5 h-5"> 10m
+        </span>
+        <span class="flex items-center gap-1">
+          <img src="images/oeil.png" class="w-5 h-5"> 98
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="bg-white rounded-3xl shadow-md overflow-hidden 
+              flex flex-col lg:flex-row">
+
+    <div class="relative">
+     <a href="description.html"> <img src="images/smile.jpg"
+           class="w-full h-56 object-cover lg:w-64 lg:h-full">
+      <img src="images/insigne-damour.png"
+           class="absolute top-4 right-4 w-10 h-10">
+    </div></a>
+
+    <div class="p-4 flex flex-col justify-between gap-4">
+      <div>
+        <h2 class="font-bold text-lg">Green Valley</h2>
+        <h3 class="text-sm text-gray-600">by Mark Lee</h3>
+      </div>
+
+      <div class="flex gap-4 text-gray-500 text-sm">
+        <span class="flex items-center gap-1">
+          <img src="images/endroit.png" class="w-5 h-5"> Japan
+        </span>
+        <span class="flex items-center gap-1">
+          <img src="images/time-and-date.png" class="w-5 h-5"> 20min
+        </span>
+        <span class="flex items-center gap-1">
+          <img src="images/oeil.png" class="w-5 h-5"> 201
+        </span>
+      </div>
+    </div>
+  </div>
+
 </section>
 
-    <footer class="flex justify-center gap-6 items-center shadow-md max-w-md px-6 py-4 rounded-3xl bg-white ">
+
+    <footer class="flex justify-center gap-6 items-center shadow-md max-w-md px-6 py-4 rounded-3xl bg-white lg:hidden">
       <span class="flex items-center justify-center rounded-3xl w-20 h-12 hover:bg-[#20B08D] hover:cursor-pointer"><img src="images/maison.png" alt="" class="h-6 w-6"></span>
       <span class="flex flex-col items-center justify-center rounded-3xl w-20 h-12 hover:bg-[#20B08D] hover:cursor-pointer" ><img src="images/endroit.png" alt="" class="h-6 w-6">Location</span>
       <span class="flex flex-col items-center justify-center rounded-3xl w-20 h-12 hover:bg-[#20B08D] hover:cursor-pointer" ><img src="images/insigne-damour.png" alt="" class="h-6 w-6">Wishlist</span>
