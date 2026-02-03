@@ -8,7 +8,6 @@
     <link href="./dist/output.css" rel="stylesheet" >
     <link rel="icon" href="images/plane_8885364.png" type="image/png" >
     <script src="https://cdn.tailwindcss.com" ></script>
-
     <title>VIABLOG</title>
   </head>
   <body class="bg-amber-50 text-black font-semibold flex flex-col justify-between gap-6">
@@ -32,18 +31,41 @@
     <section class="">
       <div class="max-w-5xl mx-auto ml-4 flex flex-col gap-10">
         <!--div main-->
-        <h2 class="text-2xl font-bold">Blogger of the week</h2>
+       
+       <h2 class="text-2xl font-bold">Blogger of the week</h2>
 
         <div class="flex flex-col gap-2">
           <!-- Profils + images -->
           <div class="flex gap-4 overflow-x-auto pb-2">
             <!-- Story / Profile 1 -->
             <div class=" flex flex-col items-center gap-1 min-w-[64px]   ">
-              <div
+              <div id="plusBtn"
                 class="hover:shadow-[0_4px_15px_#20B08D] hover:scale-10 hover:cursor-pointer  w-14 h-14 bg-[url('images/plus.png')] bg-cover bg-center rounded-full"
               ></div>
               <span class="mt-2 text-smfflex  text-center">My memory</span>
             </div>
+  <div id="formModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+    <div class="bg-white rounded-xl p-6 w-96 shadow-lg relative">
+      <h2 class="text-xl font-bold mb-4">Adding my memory
+      </h2>
+      <form class="flex flex-col gap-4">
+        <input type="text" placeholder="Entrer le nom du voyage" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+                <input type="text" placeholder="Enter votre nom" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+
+        <input type="text" placeholder="Url image" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+                <input type="text" placeholder="Destination" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+                        <input type="text" placeholder="Categorie" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+
+                <input type="datetime-local" placeholder="La date du voyage" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+        <input type="number" placeholder="Noter le voyage (1 à 5)" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+  <div class="flex justify-center mt-4">
+        <button type="submit" class="bg-[#20B08D] text-white rounded px-6 py-2 hover:bg-[#1b9278] transition">
+          Enregistrer
+        </button>
+      </div> 
+      </form>
+    </div>
+  </div>
 
             <!-- Story / Profile 2 -->
             <div class="flex flex-col items-center min-w-[64px]">
@@ -264,5 +286,7 @@
       <span class="flex flex-col items-center justify-center rounded-3xl w-20 h-12 hover:bg-[#20B08D] hover:cursor-pointer" ><img src="images/insigne-damour.png" alt="" loading="lazy" class="h-6 w-6">Wishlist</span>
    <a href="profil.html" aria-label="Search"> <span class="flex flex-col items-center justify-center rounded-3xl w-20 h-12 hover:bg-[#20B08D] hover:cursor-pointer ">  <img src="images/utilisateur.png" alt="" loading="lazy" class="h-6 w-6 ">Profil</span></a>
   </footer>
+  <script src="script.js"></script>
+
   </body>
 </html>
