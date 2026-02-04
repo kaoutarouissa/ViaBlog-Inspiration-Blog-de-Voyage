@@ -3,10 +3,13 @@
   const formModal = document.getElementById('formModal');
     const saveBtn = document.getElementById('saveBtn');
 const cardsContainer = document.getElementById("cardsContainer");
+const annuler=document.getElementById("closeBtn");
     plusBtn.addEventListener('click', () => {
       formModal.classList.remove('hidden');
     });
-
+ annuler.addEventListener('click', () => {
+      formModal.classList.add('hidden');
+    });
     saveBtn.addEventListener('click', () => {
       
       const title=document.getElementById("title").value;
@@ -20,10 +23,10 @@ const cardsContainer = document.getElementById("cardsContainer");
   <div class="hover:cursor-pointer bg-white rounded-3xl shadow-md overflow-hidden 
               flex flex-col lg:flex-row">
 
-    <div class="relative">
+    <div class="relative w-full lg:w-64 h-56 lg:h-40 flex-shrink-0 overflow-hidden">
       <a href="description.html">
         <img src="${urlimage}" 
-             class="w-full h-56 object-cover lg:w-64 lg:h-full">
+             class=" w-full  object-cover h-full">
         <img src="images/insigne-damour.png"
              class="absolute top-4 right-4 w-10 h-10">
       </a>
