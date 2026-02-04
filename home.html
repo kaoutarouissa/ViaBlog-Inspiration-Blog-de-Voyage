@@ -48,18 +48,19 @@
     <div class="bg-white rounded-xl p-6 w-96 shadow-lg relative">
       <h2 class="text-xl font-bold mb-4">Adding my memory
       </h2>
+      <div id="closeBtn" class="w-10 h-10 bg-slate-600 bg-[url('images/x.png')] bg-center bg-no-repeat bg-contain cursor-pointer"></div>
       <form class="flex flex-col gap-4">
-        <input type="text" placeholder="Entrer le nom du voyage" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
-                <input type="text" placeholder="Enter votre nom" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+        <input id="title" type="text" placeholder="Entrer le nom du voyage" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+                <input id="auteur" type="text" placeholder="Enter votre nom" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
 
-        <input type="text" placeholder="Url image" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
-                <input type="text" placeholder="Destination" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
-                        <input type="text" placeholder="Categorie" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+        <input id="urlimage" type="text" placeholder="Url image" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+                <input id="destination" type="text" placeholder="Destination" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+                        <input id="categorie" type="text" placeholder="Categori" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
 
                 <input type="datetime-local" placeholder="La date du voyage" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
         <input type="number" placeholder="Noter le voyage (1 à 5)" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
   <div class="flex justify-center mt-4">
-        <button type="submit" class="bg-[#20B08D] text-white rounded px-6 py-2 hover:bg-[#1b9278] transition">
+        <button id="saveBtn" type="button"  class="bg-[#20B08D] text-white rounded px-6 py-2 hover:bg-[#1b9278] transition">
           Enregistrer
         </button>
       </div> 
@@ -179,7 +180,7 @@
     </section>
     </div>
     
- <section class="grid grid-cols-1 gap-6  mt-4
+ <section id="cardsContainer" class="grid grid-cols-1 gap-6  mt-4
                lg:grid-cols-2 xl:grid-cols-3 
                lg:max-w-7xl lg:mx-auto px-4">
 
