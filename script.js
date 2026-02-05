@@ -4,10 +4,10 @@ const formModal = document.getElementById('formModal');
 const closeBtn=document.getElementById('closeBtn')
 
 plusBtn.addEventListener('click', () => {
-  formModal.classList.remove('hidden'); // ça doit retirer la classe hidden
+  formModal.classList.remove('hidden'); // retirer la classe hidden
 });
 closeBtn.addEventListener('click', () => {
-  formModal.classList.add('hidden'); // ça doit retirer la classe hidden
+  formModal.classList.add('hidden'); //retirer la classe hidden
 });
 saveBtn.addEventListener('click', () => {
   const title = document.getElementById("title").value;
@@ -18,9 +18,8 @@ saveBtn.addEventListener('click', () => {
 
     if (!title || !auteur || !urlimage || !destination || !categorie) {
     alert("Veuillez remplir tous les champs avant de sauvegarder !");
-    return; // stoppe la fonction
+    return; //si les chapms sont vides
   }
-  // créer un objet avec les données du formulaire
   const cardObj = {
     title: title,
     auteur: auteur,
@@ -62,17 +61,17 @@ saveBtn.addEventListener('click', () => {
   </div>
   `;
 
-  cardsContainer.insertAdjacentHTML("beforeend", cardHTML);
+  // cardsContainer.insertAdjacentHTML("beforeend", cardHTML);//ajouter cardhtml f la fin du cardcontainer
 
-  // optionnel : vider le formulaire après ajout
+  //  vider le formulaire après ajout
   document.getElementById("title").value = "";
   document.getElementById("auteur").value = "";
   document.getElementById("urlimage").value = "";
   document.getElementById("destination").value = "";
   document.getElementById("categorie").value = "";
 
-  // cacher le formulaire
+  // hidden pour le formulaire
   formModal.classList.add('hidden');
 
-  console.log(cardsData); // tu peux vérifier le tableau dans la console
+
 });
