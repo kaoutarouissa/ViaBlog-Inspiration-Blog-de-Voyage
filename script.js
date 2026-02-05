@@ -1,7 +1,10 @@
 const cardsData = [];
 const plusBtn = document.getElementById('plusBtn');
 const formModal = document.getElementById('formModal');
-const closeBtn=document.getElementById('closeBtn')
+const closeBtn=document.getElementById('closeBtn');
+const editer=document.getElementById('editer')//icon editer
+const supprimer=document.getElementById('supprimer')//icon supprimer
+const card1=document.getElementById('card1')
 
 plusBtn.addEventListener('click', () => {
   formModal.classList.remove('hidden'); // retirer la classe hidden
@@ -9,6 +12,9 @@ plusBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   formModal.classList.add('hidden'); //retirer la classe hidden
 });
+supprimer.addEventListener('click',()=>{
+  card1.classList.add('hidden');
+})
 saveBtn.addEventListener('click', () => {
   const title = document.getElementById("title").value;
   const auteur = document.getElementById("auteur").value;
@@ -34,7 +40,9 @@ saveBtn.addEventListener('click', () => {
   // maintenant tu peux générer la carte à partir de l'objet
   const cardHTML = `
   <div class="hover:cursor-pointer bg-white rounded-3xl shadow-md overflow-hidden 
-              flex flex-col lg:flex-row">
+              flex flex-col lg:flex-row  relative">
+              <img src="images/editer.png" alt="" loading="lazy" class="absolute top-2 right-2 w-4 h-4">
+  <img src="images/x.png" alt="" loading="lazy" class="absolute top-10 right-2 w-4 h-4">
     <div class="relative w-full lg:w-64 h-56 lg:h-40 flex-shrink-0 overflow-hidden">
       <a href="description.html">
         <img src="${cardObj.urlimage}" class="w-full object-cover h-full">
@@ -61,7 +69,7 @@ saveBtn.addEventListener('click', () => {
   </div>
   `;
 
-  // cardsContainer.insertAdjacentHTML("beforeend", cardHTML);//ajouter cardhtml f la fin du cardcontainer
+  cardsContainer.insertAdjacentHTML("beforeend", cardHTML);//ajouter cardhtml f la fin du cardcontainer
 
   //  vider le formulaire après ajout
   document.getElementById("title").value = "";
