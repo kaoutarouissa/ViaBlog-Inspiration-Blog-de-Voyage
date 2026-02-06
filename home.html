@@ -44,12 +44,14 @@
               ></div>
               <span class="mt-2 text-smfflex  text-center">Create</span><!--creation-->
             </div>
-  <div id="formModal" class="fixed inset-0 bg-black bg-opacity-50 hidden  items-center justify-center z-50">
+  <div id="formModal" class="flex fixed inset-0 bg-black bg-opacity-50 hidden  items-center justify-center z-50">
     <div class="bg-white rounded-xl p-6 w-96 shadow-lg relative">
-      <h2 class="text-xl font-bold mb-4">Adding my memory
-      </h2>
+      <!-- <h2 class="text-xl font-bold mb-4">Adding my memory
+      </h2> -->
       <div id="closeBtn" class="absolute top-4 right-4 w-10 h-10  bg-[url('images/close.png')] bg-center bg-no-repeat bg-contain cursor-pointer"></div>
-      <form class="flex flex-col gap-4">
+      <form class="flex flex-col justify-center items-center gap-4">
+         <h2 class="text-xl font-bold mb-4">Adding my memory
+      </h2>
         <input id="title" type="text" placeholder="Entrer le nom du voyage" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
                 <input id="auteur" type="text" placeholder="Enter votre nom" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
 
@@ -185,10 +187,10 @@
                lg:max-w-7xl lg:mx-auto px-4"> <!--section of cards-->
 
   <!-- CARD 1 -->
-  <div  id="card1" class="hover:cursor-pointer bg-white rounded-3xl shadow-md overflow-hidden 
-              flex flex-col lg:flex-row relative">
- <img id="editer" src="images/editer.png" alt="" loading="lazy" class="hover:cursor-pointer absolute top-2 right-2 w-4 h-4">
-  <img id="supprimer" src="images/x.png" alt="" loading="lazy" class="hover:cursor-pointer absolute top-10 right-2 w-4 h-4">
+  <div  class="card1 hover:cursor-pointer bg-white rounded-3xl shadow-md overflow-hidden 
+              flex flex-col lg:flex-row relative ">
+ <img  src="images/editer.png" alt="" loading="lazy" class="editer hover:cursor-pointer absolute top-24 right-6 w-6 h-6 z-10 lg:top-4 lg:right-2 lg:w-4 lg:h-4">
+  <img src="images/x.png" alt="" loading="lazy" class="supprimer hover:cursor-pointer absolute   top-16 right-6 w-6 h-6 z-20 lg:top-10 lg:right-2 lg:w-4 lg:h-4">
 
     <div class="relative">
      <a href="description.html" aria-label="Search"> <img src="images/smile.jpg" alt=""
@@ -219,10 +221,10 @@
   </div>
 
   <!-- CARD 2 -->
-  <div class="bg-white rounded-3xl shadow-md overflow-hidden 
+  <div  class="card1 bg-white rounded-3xl shadow-md overflow-hidden 
               flex flex-col lg:flex-row relative">
- <img id="editer" src="images/editer.png" alt="" loading="lazy" class="hover:cursor-pointer absolute top-2 right-2 w-4 h-4">
-  <img id="supprimer" src="images/x.png" alt="" loading="lazy" class="hover:cursor-pointer absolute top-10 right-2 w-4 h-4">
+ <img  src="images/editer.png" alt="" loading="lazy" class="editer hover:cursor-pointer absolute top-24 right-6 w-6 h-6 z-10 lg:top-4 lg:right-2 lg:w-4 lg:h-4">
+  <img  src="images/x.png" alt="" loading="lazy" class="supprimer hover:cursor-pointer absolute top-16 right-6 w-6 h-6 z-20 lg:top-10 lg:right-2 lg:w-4 lg:h-4">
     <div class="relative">
       <a href="description.html" aria-label="Search">
       <img src="images/smile.jpg" alt="" loading="lazy"
@@ -252,10 +254,10 @@
   </div>
 
   <!-- CARD 3 -->
-  <div class="bg-white rounded-3xl shadow-md overflow-hidden 
+  <div  class="card1 bg-white rounded-3xl shadow-md overflow-hidden 
               flex flex-col lg:flex-row relative">
- <img id="editer" src="images/editer.png" alt="" loading="lazy" class="hover:cursor-pointer absolute top-2 right-2 w-4 h-4">
-  <img id="supprimer" src="images/x.png" alt="" loading="lazy" class="hover:cursor-pointer absolute top-10 right-2 w-4 h-4">
+ <img src="images/editer.png" alt="" loading="lazy" class="editer hover:cursor-pointer absolute top-24 right-6 w-6 h-6 z-10 lg:top-4 lg:right-2 lg:w-4 lg:h-4">
+  <img  src="images/x.png" alt="" loading="lazy" class="supprimer absolute top-16 right-6 w-6 h-6 z-20  lg:top-10 lg:right-2 lg:w-4 lg:h-4">
     <div class="relative">
      <a href="description.html" aria-label="Search"> <img src="images/smile.jpg" alt=""
            class="w-full h-56 object-cover lg:w-64 lg:h-full">

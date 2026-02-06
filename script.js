@@ -2,9 +2,19 @@ const cardsData = [];
 const plusBtn = document.getElementById('plusBtn');
 const formModal = document.getElementById('formModal');
 const closeBtn=document.getElementById('closeBtn');
-const editer=document.getElementById('editer')//icon editer
-const supprimer=document.getElementById('supprimer')//icon supprimer
-const card1=document.getElementById('card1')
+const supprimer=document.querySelectorAll('.supprimer')//icon supprimer
+const editer=document.querySelectorAll('.editer')
+const card1=document.querySelectorAll('.card1')
+const container = document.getElementById('cardsContainer');
+let currentCard = null; // هنا غادي نخزنو الكارد اللي ضغطنا عليها
+
+
+
+container.addEventListener('click', (e) => {
+  if (e.target.classList.contains('supprimer')) {
+    e.target.closest('.card1').classList.add('hidden');
+  }
+});
 
 plusBtn.addEventListener('click', () => {
   formModal.classList.remove('hidden'); // retirer la classe hidden
@@ -12,9 +22,27 @@ plusBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   formModal.classList.add('hidden'); //retirer la classe hidden
 });
-supprimer.addEventListener('click',()=>{
-  card1.classList.add('hidden');
+editer.forEach(btn => {
+  btn.addEventListener("click", () => {
+    formModal.classList.remove("hidden");
+  });
+});
+// supprimer.addEventListener('click',()=>{
+//   card1.classList.add('hidden')
+// })
+supprimer.forEach(icon => {
+  icon.addEventListener('click', () => {
+    icon.closest('.card1').classList.add('hidden');
+  });
 })
+container.addEventListener('click', (e) => {
+  // شوف واش الكليك كان على icon editer
+  if (e.target.id === 'editer') {
+    currentCard = e.target.closest('.card1'); // هادي الكارد اللي ضغطنا عليها
+    formModal.classList.remove('hidden');     // فتح الفورم
+  }
+});
+
 saveBtn.addEventListener('click', () => {
   const title = document.getElementById("title").value;
   const auteur = document.getElementById("auteur").value;
@@ -39,10 +67,10 @@ saveBtn.addEventListener('click', () => {
 
   // maintenant tu peux générer la carte à partir de l'objet
   const cardHTML = `
-  <div class="hover:cursor-pointer bg-white rounded-3xl shadow-md overflow-hidden 
+  <div class="card1 hover:cursor-pointer bg-white rounded-3xl shadow-md overflow-hidden 
               flex flex-col lg:flex-row  relative">
               <img src="images/editer.png" alt="" loading="lazy" class="absolute top-2 right-2 w-4 h-4">
-  <img src="images/x.png" alt="" loading="lazy" class="absolute top-10 right-2 w-4 h-4">
+  <img src="images/x.png" alt="" loading="lazy" class="supprimer absolute top-10 right-2 w-4 h-4">
     <div class="relative w-full lg:w-64 h-56 lg:h-40 flex-shrink-0 overflow-hidden">
       <a href="description.html">
         <img src="${cardObj.urlimage}" class="w-full object-cover h-full">
