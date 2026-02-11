@@ -6,13 +6,13 @@ const supprimer=document.querySelectorAll('.supprimer')//icon supprimer
 const editer=document.querySelectorAll('.editer')
 const card1=document.querySelectorAll('.card1')
 const container = document.getElementById('cardsContainer');
-let currentCard = null; // هنا غادي نخزنو الكارد اللي ضغطنا عليها
+let currentCard = null; 
 
 
 
 container.addEventListener('click', (e) => {
-  if (e.target.classList.contains('supprimer')) {
-    e.target.closest('.card1').classList.add('hidden');
+  if (e.target.classList.contains('supprimer')) {//EST CE QUE HAD ELEM SUPP A UNE CLASS
+    e.target.closest('.card1').classList.add('hidden');//FIRST CARD
   }
 });
 
@@ -36,10 +36,10 @@ supprimer.forEach(icon => {
   });
 })
 container.addEventListener('click', (e) => {
-  // شوف واش الكليك كان على icon editer
+  // 
   if (e.target.id === 'editer') {
-    currentCard = e.target.closest('.card1'); // هادي الكارد اللي ضغطنا عليها
-    formModal.classList.remove('hidden');     // فتح الفورم
+    currentCard = e.target.closest('.card1'); // 
+    formModal.classList.remove('hidden');     
   }
 });
 
@@ -65,12 +65,12 @@ saveBtn.addEventListener('click', () => {
   // ajouter l'objet au tableau
   cardsData.push(cardObj);
 
-  // maintenant tu peux générer la carte à partir de l'objet
+  // GENERE LA CART
   const cardHTML = `
   <div class="card1 hover:cursor-pointer bg-white rounded-3xl shadow-md overflow-hidden 
               flex flex-col lg:flex-row  relative">
-              <img src="images/editer.png" alt="" loading="lazy" class="absolute top-2 right-2 w-4 h-4">
-  <img src="images/x.png" alt="" loading="lazy" class="supprimer absolute top-10 right-2 w-4 h-4">
+              <img src="images/editer.png" alt="" loading="lazy" class="absolute top-24 right-6 w-6 h-6">
+  <img src="images/x.png" alt="" loading="lazy" class="supprimer absolute top-16 right-6 w-6 h-6">
     <div class="relative w-full lg:w-64 h-56 lg:h-40 flex-shrink-0 overflow-hidden">
       <a href="description.html">
         <img src="${cardObj.urlimage}" class="w-full object-cover h-full">
