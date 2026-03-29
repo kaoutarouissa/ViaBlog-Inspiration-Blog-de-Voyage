@@ -8,7 +8,6 @@
     <link href="./dist/output.css" rel="stylesheet" >
     <link rel="icon" href="images/plane_8885364.png" type="image/png" >
     <script src="https://cdn.tailwindcss.com" ></script>
-
     <title>VIABLOG</title>
   </head>
   <body class="bg-amber-50 text-black font-semibold flex flex-col justify-between gap-6">
@@ -32,18 +31,44 @@
     <section class="">
       <div class="max-w-5xl mx-auto ml-4 flex flex-col gap-10">
         <!--div main-->
-        <h2 class="text-2xl font-bold">Blogger of the week</h2>
+       
+       <h2 class="text-2xl font-bold">Blogger of the week</h2>
 
         <div class="flex flex-col gap-2">
           <!-- Profils + images -->
           <div class="flex gap-4 overflow-x-auto pb-2">
             <!-- Story / Profile 1 -->
-            <div class="flex flex-col items-center min-w-[64px]">
-              <div
-                class="hover:cursor-pointer w-16 h-16 bg-[url('images/woman.jpg')] bg-cover bg-center rounded-full"
+            <div class=" flex flex-col items-center gap-1 min-w-[64px]   ">
+              <div id="plusBtn"
+                class="hover:shadow-[0_4px_15px_#20B08D] hover:scale-10 hover:cursor-pointer  w-14 h-14 bg-[url('images/plus.png')] bg-cover bg-center rounded-full"
               ></div>
-              <span class="mt-2 text-sm text-center">Josifina</span>
+              <span class="mt-2 text-smfflex  text-center">Create</span><!--creation-->
             </div>
+  <div id="formModal" class="flexé fixed inset-0 bg-black bg-opacity-50 hidden  items-center justify-center z-50">
+    <div class="bg-white rounded-xl p-6 w-96 shadow-lg relative">
+      <!-- <h2 class="text-xl font-bold mb-4">Adding my memory
+      </h2> -->
+      <div id="closeBtn" class="absolute top-4 right-4 w-10 h-10  bg-[url('images/close.png')] bg-center bg-no-repeat bg-contain cursor-pointer"></div>
+      <form class="flex flex-col justify-center items-center gap-4">
+         <h2 class="text-xl font-bold mb-4">Adding my memory
+      </h2>
+        <input id="title" type="text" placeholder="Entrer le nom du voyage" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+                <input id="auteur" type="text" placeholder="Enter votre nom" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+
+        <input id="urlimage" type="text" placeholder="Url image" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+                <input id="destination" type="text" placeholder="Destination" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+                        <input id="categorie" type="text" placeholder="Categori" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+
+                <input type="datetime-local" placeholder="La date du voyage" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+        <input type="number" placeholder="Noter le voyage (1 à 5)" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#20B08D]">
+  <div class="flex justify-center mt-4">
+        <button id="saveBtn" type="button"  class="bg-[#20B08D] text-white rounded px-6 py-2 hover:bg-[#1b9278] transition">
+          Enregistrer
+        </button>
+      </div> 
+      </form>
+    </div>
+  </div>
 
             <!-- Story / Profile 2 -->
             <div class="flex flex-col items-center min-w-[64px]">
@@ -157,19 +182,22 @@
     </section>
     </div>
     
- <section class="grid grid-cols-1 gap-6  mt-4
+ <section id="cardsContainer" class="grid grid-cols-1 gap-6  mt-4
                lg:grid-cols-2 xl:grid-cols-3 
-               lg:max-w-7xl lg:mx-auto px-4">
+               lg:max-w-7xl lg:mx-auto px-4"> <!--section of cards-->
 
   <!-- CARD 1 -->
-  <div class="hover:cursor-pointer bg-white rounded-3xl shadow-md overflow-hidden 
-              flex flex-col lg:flex-row">
+  <div  class="card1 hover:cursor-pointer bg-white rounded-3xl shadow-md overflow-hidden 
+              flex flex-col lg:flex-row relative ">
+ <img  src="images/editer.png" alt="" loading="lazy" class="editer hover:cursor-pointer absolute top-24 right-6 w-6 h-6 z-10 lg:top-4 lg:right-2 lg:w-4 lg:h-4">
+  <img src="images/x.png" alt="" loading="lazy" class="supprimer hover:cursor-pointer absolute   top-16 right-6 w-6 h-6 z-20 lg:top-10 lg:right-2 lg:w-4 lg:h-4">
 
     <div class="relative">
      <a href="description.html" aria-label="Search"> <img src="images/smile.jpg" alt=""
-           class="w-full h-56 object-cover lg:w-64 lg:h-full">
+           class="w-full h-56 object-cover lg:w-64 lg:h-full hover:cursor-pointer">
       <img src="images/insigne-damour.png" alt="" loading="lazy"
            class="absolute top-4 right-4 w-10 h-10"></a>
+          
     </div>
 
     <div class="p-4 flex flex-col justify-between gap-4">
@@ -193,9 +221,10 @@
   </div>
 
   <!-- CARD 2 -->
-  <div class="bg-white rounded-3xl shadow-md overflow-hidden 
-              flex flex-col lg:flex-row">
-
+  <div  class="card1 bg-white rounded-3xl shadow-md overflow-hidden 
+              flex flex-col lg:flex-row relative">
+ <img  src="images/editer.png" alt="" loading="lazy" class="editer hover:cursor-pointer absolute top-24 right-6 w-6 h-6 z-10 lg:top-4 lg:right-2 lg:w-4 lg:h-4">
+  <img  src="images/x.png" alt="" loading="lazy" class="supprimer hover:cursor-pointer absolute top-16 right-6 w-6 h-6 z-20 lg:top-10 lg:right-2 lg:w-4 lg:h-4">
     <div class="relative">
       <a href="description.html" aria-label="Search">
       <img src="images/smile.jpg" alt="" loading="lazy"
@@ -225,9 +254,10 @@
   </div>
 
   <!-- CARD 3 -->
-  <div class="bg-white rounded-3xl shadow-md overflow-hidden 
-              flex flex-col lg:flex-row">
-
+  <div  class="card1 bg-white rounded-3xl shadow-md overflow-hidden 
+              flex flex-col lg:flex-row relative">
+ <img src="images/editer.png" alt="" loading="lazy" class="editer hover:cursor-pointer absolute top-24 right-6 w-6 h-6 z-10 lg:top-4 lg:right-2 lg:w-4 lg:h-4">
+  <img  src="images/x.png" alt="" loading="lazy" class="supprimer absolute top-16 right-6 w-6 h-6 z-20  lg:top-10 lg:right-2 lg:w-4 lg:h-4">
     <div class="relative">
      <a href="description.html" aria-label="Search"> <img src="images/smile.jpg" alt=""
            class="w-full h-56 object-cover lg:w-64 lg:h-full">
@@ -263,6 +293,8 @@
       <span class="flex flex-col items-center justify-center rounded-3xl w-20 h-12 hover:bg-[#20B08D] hover:cursor-pointer" ><img src="images/endroit.png" alt="" loading="lazy" class="h-6 w-6">Location</span>
       <span class="flex flex-col items-center justify-center rounded-3xl w-20 h-12 hover:bg-[#20B08D] hover:cursor-pointer" ><img src="images/insigne-damour.png" alt="" loading="lazy" class="h-6 w-6">Wishlist</span>
    <a href="profil.html" aria-label="Search"> <span class="flex flex-col items-center justify-center rounded-3xl w-20 h-12 hover:bg-[#20B08D] hover:cursor-pointer ">  <img src="images/utilisateur.png" alt="" loading="lazy" class="h-6 w-6 ">Profil</span></a>
-    </footer>
+  </footer>
+  <script src="script.js"></script>
+
   </body>
 </html>
